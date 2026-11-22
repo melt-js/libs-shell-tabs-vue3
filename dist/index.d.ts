@@ -1,0 +1,16 @@
+export { createShellAdapter } from "./create-shell-adapter";
+export { default as ShellTabBar } from "./components/ShellTabBar.vue";
+export { default as ShellHost } from "./components/ShellHost.vue";
+export { default as ShellToolbar } from "./components/ShellToolbar.vue";
+export { default as ShellHeader } from "./components/ShellHeader.vue";
+export { resolveBreadcrumb } from "./shell-header";
+export type { ShellBreadcrumbItem } from "./shell-header";
+export { default as ShellSettings } from "./components/ShellSettings.vue";
+export { default as SkinSwitch } from "./components/SkinSwitch.vue";
+export { SHELL_SKIN_STORAGE_KEY, createShellSkinRegistry, pickSkinEntry, readStoredSkinKey, writeStoredSkinKey, } from "./skin-registry";
+export { GRAYSCALE_CLASS, SHELL_SETTINGS_STORAGE_KEY, createShellSettings, } from "./shell-settings";
+export type { ShellSettingsApi, ShellSettingsOptions, ShellSettingsState, ShellThemeMode } from "./shell-settings";
+export { DEFAULT_TOOL_ORDER, THEME_STORAGE_KEY, createShellToolbar, toggleBuiltinFullscreen, toggleBuiltinTheme, } from "./shell-toolbar";
+export type { ShellToolActions, ShellToolKey, ShellToolbar as ShellToolbarApi, ShellToolbarOptions, } from "./shell-toolbar";
+export type { ShellSkinBundle, ShellSkinEntry, ShellSkinLoader, ShellSkinRegistry, } from "./skin-registry";
+export type { ShellAdapter, ShellAdapterOptions, ShellCapabilities, ShellCloseScope, ShellExternalTarget, ShellIntent, ShellIntentSource, ShellLayoutEmits, ShellLayoutProps, ShellLocalTarget, ShellManagerPort, ShellManagerState, ShellMenuKey, ShellMenuNode, ShellMenuOptions, ShellMenuResolution, ShellMicroOpener, ShellMicroTarget, ShellResult, ShellRuntimeHost, ShellSkin, ShellSnapshot, ShellTab, ShellTabId, ShellTabTarget, } from "./types";
